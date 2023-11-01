@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap:10px;
+            padding: 20px;
+        }
+        .pic1{
+            grid-column-start:1 ;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end:2;
+        }
+        .pic2{
+            grid-column-start:2 ;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end:3;
+        } 
+        .pic3{
+            grid-column-start:3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end:2;
+        } 
+        .pic4{
+            grid-column-start:1 ;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end:4;
+        }
+         .pic5{
+            grid-column-start:2 ;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end:4;
+        } 
+        .pic6{
+            grid-column-start:3 ;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end:4;
+        }   
+        img{
+            height:100%;
+            width:100%;
+            border-radius: 10px;
+
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic1"><img src="https://www.shutterstock.com/image-illustration/top-view-medical-stethoscope-icon-260nw-2075382679.jpg" alt="img"></div>
+        <div class="pic2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPiTjl-1VA3FEddCJz6c0SBA159ZSJDjDKUjV7kyzmHg&s" alt="img"></div>
+        <div class="pic3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHuNmU7UwyEWNmhMEqPBfde48jCdKM3Qby0Tj78EHM&s"alt="img"></div>
+        <div class="pic4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0jjNfPZa1D27N3UvpIEwFSNW981cnT-1hA&usqp=CAU"alt="img"></div>
+        <div class="pic5"><img src="data:image/jpeg;base64,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"></div>
+        <div class="pic6"><img src="https://static9.depositphotos.com/1194063/1169/i/450/depositphotos_11699856-stock-photo-medical-ampoules-and-syringe.jpg"alt="img"></div>
+    </div>
+    
+</body>
+</html>
